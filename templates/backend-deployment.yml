@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.frontendImage.name}}
+  name: {{ .Values.backendImage.name}}
   namespace: app
 spec:
   selector:
     matchLabels:
-      app: {{ .Values.frontendImage.name}}
+      app: {{ .Values.backendImage.name}}
   template:
     metadata:
       labels:
-        app: {{ .Values.frontendImage.name}}
+        app: {{ .Values.backendImage.name}}
     spec:
       containers:
-      - name: {{ .Values.frontendImage.name}}
-        image: {{ .Values.frontendImage.repository}}:{{ .Values.frontendImage.tag 
+      - name: {{ .Values.backendImage.name}}
+        image: {{ .Values.backendImage.repository}}:{{ .Values.frontendImage.tag 
         - containerPort: 80
