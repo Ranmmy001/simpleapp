@@ -16,7 +16,7 @@ frontendImage:
 
 backendImage:
   repository: henryokiyi/cicd_portfolio
-  name:  backend
+  name: backend
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
