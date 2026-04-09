@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.backendImage.name }}
+  name: backend-deployment
   namespace: app
 spec:
   selector:
     matchLabels:
-      app: {{ .Values.backendImage.name }}
+      app: backend-deployment
   template:
     metadata:
       labels:
-        app: {{ .Values.backendImage.name }}
+        app: backend-deployment
     spec:
       containers:
       - name: {{ .Values.backendImage.name }}

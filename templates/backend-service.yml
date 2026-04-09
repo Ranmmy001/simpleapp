@@ -5,7 +5,7 @@ metadata:
   namespace: app
 spec:
   selector:
-    app: backend
+    app: backend-deployment
   ports:
   - port: 80
     targetPort: 80
