@@ -13,6 +13,6 @@ spec:
         app: backend-deployment
     spec:
       containers:
-      - name: {{ .Values.backendImage.name }}
-      - image: {{ .Values.backendImage.repository }}
+      - name: {{ .Values.backendImage.repository }}
+      - image: {{ .Values.backendImage.name }}
       - containerPort: 80
